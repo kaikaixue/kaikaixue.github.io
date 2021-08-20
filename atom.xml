@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>xkk的新天地</title>
+  <title>xkk的小窝</title>
   
   
   <link href="https://xuekaikai.github.io/atom.xml" rel="self"/>
   
   <link href="https://xuekaikai.github.io/"/>
-  <updated>2021-08-20T10:43:41.375Z</updated>
+  <updated>2021-08-20T11:05:59.184Z</updated>
   <id>https://xuekaikai.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>xuekaikai</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>Git快速入门</title>
     <link href="https://xuekaikai.github.io/2021/08/20/kuai-su-ru-men-git/"/>
     <id>https://xuekaikai.github.io/2021/08/20/kuai-su-ru-men-git/</id>
-    <published>2021-08-20T07:38:57.882Z</published>
-    <updated>2021-08-20T10:43:41.375Z</updated>
+    <published>2021-08-20T11:02:20.000Z</published>
+    <updated>2021-08-20T11:05:59.184Z</updated>
     
     
       
@@ -34,6 +34,8 @@
     
     
     
+    
+    <category term="Git" scheme="https://xuekaikai.github.io/tags/Git/"/>
     
   </entry>
   
