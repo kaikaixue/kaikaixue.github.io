@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Git快速入门, xkk的小窝">
+    <meta name="keywords" content="使用Git, xkk的小窝">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Git快速入门 | xkk的小窝</title>
+    <title>使用Git | xkk的小窝</title>
     <link rel="icon" type="image/png" href="../../../../favicon.png">
 
     <link rel="stylesheet" type="text/css" href="../../../../libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Git快速入门</h1>
+                    <h1 class="description center-align post-title">使用Git</h1>
                 </div>
             </div>
         </div>
@@ -457,7 +457,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-20
+                    2021-08-21
                 </div>
                 
 
@@ -466,7 +466,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    375
+                    1.8k
                 </div>
                 
 
@@ -488,67 +488,248 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Git快速入门"><a href="#Git快速入门" class="headerlink" title="Git快速入门"></a>Git快速入门</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><ol>
-<li><p>点击右上角 + 号，选择下拉菜单选择 <strong>New repository（新建仓库）</strong>。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210806224614081.png" alt="image-20210806224614081"></p>
-</li>
-<li><p>为仓库设置自己心怡的名称。例如 “hello-world”。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210806224754132.png" alt="image-20210806224754132"></p>
-</li>
-<li><p>（可选）添加仓库的说明。例如，“我在 GitHub 上的第一个仓库”。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210806225007260.png" alt="image-20210806225007260"></p>
-</li>
-<li><p>选择仓库可见性。（公共或私有）</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210806225046524.png" alt="image-20210806225046524"></p>
-</li>
-<li><p>选择 Initialize this repository with a README（使用自述文件初始化此仓库）。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210806225227004.png" alt="image-20210806225227004"></p>
-</li>
-<li><p>最后点击 Create repository。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210806225316669.png" alt="image-20210806225316669"></p>
-<p>这样一个 Github 仓库就建立好了。</p>
-</li>
-</ol>
-<h2 id="复刻仓库"><a href="#复刻仓库" class="headerlink" title="复刻仓库"></a>复刻仓库</h2><p>复刻是仓库的副本。通过复刻仓库，可以自由地尝试更改而不会影响原始项目。</p>
+                <h1 id="使用Git"><a href="#使用Git" class="headerlink" title="使用Git"></a>使用Git</h1><h2 id="在-Git-中设置用户名"><a href="#在-Git-中设置用户名" class="headerlink" title="在 Git 中设置用户名"></a>在 Git 中设置用户名</h2><p>Git 使用用户名将提交与身份关联。你可以使用 git config 命令更改与你的 Git 提交关联的名称。设置的新名称将在从命令行推送到 GitHub 的任何未来提交中显示。</p>
+<p><strong>为计算机上的每个仓库设置 Git 用户名</strong></p>
 <ol>
-<li><p><strong>创建复刻的本地克隆</strong></p>
+<li><p>打开 Git Bash。</p>
+</li>
+<li><p>设置 Git 用户名</p>
+<pre><code>$ git config --global user.name &quot;xkk&quot;
+</code></pre>
+</li>
+<li><p>确认你正确设置了 Git 用户名：</p>
+<pre><code>$ git config --global user.name
+&gt; xkk
+</code></pre>
+</li>
+</ol>
+<p><strong>为一个仓库设置 Git 用户名</strong></p>
 <ol>
-<li><p>找到你想要复刻的仓库，点击 Code。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210808155638074.png" alt="image-20210808155638074"></p>
-</li>
-<li><p>然后任意选择 HTTPS 或者 SSH 方式，点击复制按钮，复制地址。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210808155856882.png" alt="image-20210808155856882"></p>
-</li>
-<li><p>在你想要存放的文件夹下，右击鼠标打开 Git Bash。</p>
-</li>
-<li><p>键入  git clone ,然后粘贴刚刚复制的 URL。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210808160952914.png" alt="image-20210808160952914"></p>
-</li>
-<li><p>按 Enter 键。创建你的本地克隆。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210808160758187.png" alt="image-20210808160758187"></p>
-</li>
+<li>在你想设置的仓库目录下打开 Git Bash。</li>
+<li>同上 2，3。</li>
 </ol>
-<p>这样一个本地克隆就复刻好了。</p>
-</li>
-<li><p><strong>配置 Git 以将你的复刻与原始仓库同步</strong></p>
+<h2 id="关于和管理远程仓库"><a href="#关于和管理远程仓库" class="headerlink" title="关于和管理远程仓库"></a>关于和管理远程仓库</h2><p>GitHub 的协作开发方法取决于从您的本地仓库发布提交到 GitHub，以供其他人查看、提取和更新。</p>
+<p><strong>创建远程仓库</strong></p>
+<pre><code>git remote add origin &lt;REMOTE_URL&gt;
+</code></pre>
+<p>这会将名称 origin 与 REMOTE_URL 关联。</p>
+<p>还可以使用命令 git remote set-url 来更改远程 URL。</p>
+<p><strong>更改远程仓库的 URL</strong></p>
+<p>git remote set-url  命令使用两个参数来更改。</p>
+<ul>
+<li>现有远程仓库的名称。例如，源仓库和上游仓库。</li>
+<li>远程仓库的新 URL。</li>
+</ul>
+<p><strong>将远程 URL 从 SSH 切换到 HTTPS (反之同样)</strong></p>
 <ol>
-<li><p>同上 1-2 条</p>
+<li><p>在本地仓库的目录打开 Git Bash。</p>
 </li>
-<li><p>在刚刚本地克隆的目录右击打开 Git Bash。</p>
+<li><p>使用 git remote -v 列出现有远程仓库。</p>
+<pre><code>$ git remote -v
+&gt; origin  git@github.com:USERNAME/REPOSITORY.git (fetch)
+&gt; origin  git@github.com:USERNAME/REPOSITORY.git (push)
+</code></pre>
 </li>
-<li><p>键入 git remote -v,然后按 Enter 键。你将看到当前为复刻配置的远程仓库。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210808161948820.png" alt="image-20210808161948820"></p>
+<li><p>使用 git remote set-url 将 URL 从 SSH 改为 HTTPS。</p>
+<pre><code>$ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+</code></pre>
 </li>
-<li><p>键入 git remote add upstream ，然后粘贴刚刚复制的仓库 URL 并按 Enter 键。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210808162153393.png" alt="image-20210808162153393"></p>
-</li>
-<li><p>验证为复刻指定的上游仓库，再次键入 git remote -v 。</p>
-<p>你将看到复刻的 URL 为 origin，原始仓库的 URL 为 upstream。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210808162328344.png" alt="image-20210808162328344"></p>
+<li><p>验证远程 URL 是否已更改。</p>
+<pre><code>$ git remote -v
+# Verify new remote URL
+&gt; origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
+&gt; origin  https://github.com/USERNAME/REPOSITORY.git (push)
+</code></pre>
 </li>
 </ol>
+<p><strong>重命名远程仓库</strong></p>
+<p>使用 git remote rename 命令可重命名现有的远程。</p>
+<p>两个参数：</p>
+<ul>
+<li>现有的远程名称，例如 origin。</li>
+<li>远程的新名称，例如 destination。</li>
+</ul>
+<pre><code>$ git remote -v
+# 查看现有远程
+&gt; origin  https://github.com/OWNER/REPOSITORY.git (fetch)
+&gt; origin  https://github.com/OWNER/REPOSITORY.git (push)
+
+$ git remote rename origin destination
+# 将远程名称从 &#39;origin&#39; 更改为 &#39;destination&#39;
+
+$ git remote -v
+# 验证远程的新名称
+&gt; destination  https://github.com/OWNER/REPOSITORY.git (fetch)
+&gt; destination  https://github.com/OWNER/REPOSITORY.git (push)
+</code></pre>
+<p><strong>删除远程仓库</strong></p>
+<p>使用 git remote rm 命令可从仓库中删除远程 URL。</p>
+<p>一个参数：</p>
+<ul>
+<li>远程名称，例如 destination</li>
+</ul>
+<pre><code>$ git remote -v
+# 查看当前远程
+&gt; origin  https://github.com/OWNER/REPOSITORY.git (fetch)
+&gt; origin  https://github.com/OWNER/REPOSITORY.git (push)
+&gt; destination  https://github.com/FORKER/REPOSITORY.git (fetch)
+&gt; destination  https://github.com/FORKER/REPOSITORY.git (push)
+
+$ git remote rm destination
+# 删除远程
+$ git remote -v
+# 验证其已删除
+&gt; origin  https://github.com/OWNER/REPOSITORY.git (fetch)
+&gt; origin  https://github.com/OWNER/REPOSITORY.git (push)
+</code></pre>
+<p><strong>注：git remote rm 不会从服务器中删除远程仓库。它只是从本地仓库中删除远程及其引用。</strong></p>
+<h2 id="关联文本编辑器与-Git"><a href="#关联文本编辑器与-Git" class="headerlink" title="关联文本编辑器与 Git"></a>关联文本编辑器与 Git</h2><p><strong>使用 Visual Studio Code 作为编辑器</strong></p>
+<ol>
+<li><p>打开 Git Bash。</p>
+</li>
+<li><p>输入命令：</p>
+<pre><code>$ git config --global core.editor &quot;code --wait&quot;
+</code></pre>
 </li>
 </ol>
+<h2 id="推送提交到远程仓库"><a href="#推送提交到远程仓库" class="headerlink" title="推送提交到远程仓库"></a>推送提交到远程仓库</h2><p>使用 git push 将本地分支上的提交推送到远程仓库。</p>
+<p>两个参数：</p>
+<ul>
+<li>远程命令，如 origin。</li>
+<li>分支名称，如 main。</li>
+</ul>
+<pre><code>git push  &lt;REMOTENAME&gt; &lt;BRANCHNAME&gt;
+</code></pre>
+<p><strong>重命名分支</strong></p>
+<p>同样使用 git push 命令，但要加上一个新参数：新参数的名称。</p>
+<pre><code>git push  &lt;REMOTENAME&gt; &lt;LOCALBRANCHNAME&gt;:&lt;REMOTEBRANCHNAME&gt;
+</code></pre>
+<p>这会将 LOCALBRANCHNAME 推送到 REMOTENAME，但其名称改为 REMOTEBRANCHNAME。</p>
+<p><strong>推送标记</strong></p>
+<p>默认情况下，没有其他参数时， git push 会发送所有名称与远程分支相同的匹配分支。</p>
+<p>要推送单一标记，可以发出与推送分支相同的命令：</p>
+<pre><code>git push  &lt;REMOTENAME&gt; &lt;TAGNAME&gt;
+</code></pre>
+<p>要推送所有标记，可以输入命令：</p>
+<pre><code>git push  &lt;REMOTENAME&gt; --tags
+</code></pre>
+<p><strong>删除远程分支或标记</strong></p>
+<pre><code>git push  &lt;REMOTENAME&gt; :&lt;BRANCHNAME&gt; 
+</code></pre>
+<p>注意：冒号前有一个空格。</p>
+<h2 id="从远程仓库获取更改"><a href="#从远程仓库获取更改" class="headerlink" title="从远程仓库获取更改"></a>从远程仓库获取更改</h2><p><strong>从远程仓库获取更改</strong></p>
+<p>使用 git fetch 可检索他人完成的新工作。从仓库获取将会获取所有新的远程跟踪分支和标记，但不会将这些更改合并到自己的分支中。</p>
+<pre><code>$ git fetch remotename
+# 获取远程仓库的更新
+</code></pre>
+<p><strong>合并更改到本地分支</strong></p>
+<p>合并可将本地更改与其他人所作的更改组合起来。</p>
+<pre><code>$ git merge remotename/branchname
+# 将在线更新与你的本地工作进行合并
+</code></pre>
+<p><strong>从远程仓库拉取更改</strong></p>
+<p>git pull 是在同一个命令中完成 git fetch 和 git merge 。</p>
+<pre><code>$ git pull remotename branchname
+# 获取在线更新并将其与你的本地工作进行合并
+</code></pre>
+<h2 id="处理非快进错误"><a href="#处理非快进错误" class="headerlink" title="处理非快进错误"></a>处理非快进错误</h2><p>有时，Git 无法在不丢失提交的情况下对远程仓库进行更改。发送此情况时，推送会被拒绝。</p>
+<p>那么就需要先 git pull 。</p>
+<pre><code>$ git pull origin YOUR_BRANCH_NAME
+</code></pre>
+<h2 id="将子文件夹拆分成新仓库"><a href="#将子文件夹拆分成新仓库" class="headerlink" title="将子文件夹拆分成新仓库"></a>将子文件夹拆分成新仓库</h2><ol>
+<li><p>打开 Git Bash 。</p>
+</li>
+<li><p>将工作目录改为要创建新仓库的位置。</p>
+</li>
+<li><p>克隆包含改子文件夹的仓库。</p>
+<pre><code>$ git clone git@github.com:kaikaixue/First.git
+</code></pre>
+</li>
+<li><p>将当前工作目录改为克隆的仓库。</p>
+</li>
+<li><p>要从仓库中的其余文件过滤出该子文件夹，运行 <code>git filter-branch</code></p>
+<pre><code>$ git filter-branch FOLDER-NAME BRANCH-NAME
+</code></pre>
+</li>
+<li><p>在 Github 上创建新仓库。</p>
+</li>
+<li><p>复制新仓库的远程仓库 URL。</p>
+</li>
+<li><p>检查仓库现有的远程名称。</p>
+<pre><code>$ git remote -v
+</code></pre>
+</li>
+<li><p>将现有的远程名称中的远程仓库 URL 换成刚刚复制的新的远程仓库 URL。</p>
+<pre><code>$ git remote set-url origin 新的URL
+</code></pre>
+</li>
+<li><p>验证新的远程 URL 是否更改。</p>
+<pre><code>$ git remote -v
+</code></pre>
+</li>
+<li><p>将你的跟你改推送到 Github 上的新仓库。</p>
+<pre><code>$ git push -u origin BRANCH-NAME
+</code></pre>
+</li>
+</ol>
+<h2 id="Git-子树合并"><a href="#Git-子树合并" class="headerlink" title="Git 子树合并"></a>Git 子树合并</h2><p>如果需要管理单一仓库中的多个项目，可以使用 <strong>子树合并</strong> 来处理所有引用。</p>
+<p>通常子树合并用于在仓库中包含仓库。 “子仓库”存储在主仓库的文件夹中。</p>
+<p><strong>创建用于子树合并的空仓库</strong></p>
+<ol>
+<li><p>打开 Git Bash。</p>
+</li>
+<li><p>创建一个新目录并找到它。</p>
+<pre><code>$ mkdir test
+$ cd test
+</code></pre>
+</li>
+<li><p>初始化新的 Git 仓库。</p>
+<pre><code>$ git init
+</code></pre>
+</li>
+<li><p>创建并提交新文件。</p>
+<pre><code>$ touch .gitignore
+$ git add .gitignore
+$ git commit -m &quot;initial commit&quot;
+</code></pre>
+</li>
+</ol>
+<p><strong>新增一个仓库为子树</strong></p>
+<ol>
+<li><p>新增指向我们感兴趣的单独项目的远程 URL。</p>
+<pre><code>$ git remote add -f spoon-knife git@github.com:octocat/Spoon-Knife.git
+</code></pre>
+</li>
+<li><p>将<code>Spon-Knife</code>项目合并到当地 Git 项目。</p>
+<pre><code>$ git merge -s ours --no-commit --allow-unrelated-histories spoon-knife/main
+</code></pre>
+</li>
+<li><p>创建新目录 spoon-knife 并将<code>Spoon-Knife</code>项目的 Git 历史记录复制到其中。</p>
+<pre><code>$ git read-tree --prefix=spoon-knife/ -u spoon-knife/main
+</code></pre>
+</li>
+<li><p>提交更改</p>
+<pre><code>$ git commit -m &quot;Subtree merged in spoon-knife&quot;
+</code></pre>
+</li>
+</ol>
+<p><strong>同步更新和更改</strong></p>
+<p>添加子项目时，它不会自动与上游更改保持同步。则需要：</p>
+<pre><code>$ git pull -s subtree remotename branchname
+</code></pre>
+<p>针对刚刚的测试，则是：</p>
+<pre><code>$ git pull -s subtree spoon-knife main
+</code></pre>
+<h2 id="关于-Git-变基"><a href="#关于-Git-变基" class="headerlink" title="关于 Git 变基"></a>关于 Git 变基</h2><p><code>git rebase</code> 命令用于轻松更改一系列提交，修改仓库的历史记录。可以重新排序、编辑提交或将提交压缩到一起。</p>
+<p><strong>对分支变基提交</strong></p>
+<p>要对另一个分支与当前分支状态之间的所有提交变基，使用命令：</p>
+<pre><code>$ git rebase --interactive other_branch_name
+</code></pre>
+<p><strong>对某一时间点变基提交</strong></p>
+<p>要变基当前分支中最近的几个提交，使用命令：</p>
+<pre><code>$ git rebase --interactive HEAD~7
+</code></pre>
+<p><a href>https://docs.github.com/cn/github/getting-started-with-github/using-git/using-git-rebase-on-the-command-line</a></p>
 
                 
             </div>
@@ -785,7 +966,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2021-08-20T19-02-20',
+        id: '2021-08-21T13-23-29',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -809,7 +990,7 @@
 <script src="../../../../libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Fri Aug 20 2021 19:02:20 GMT+0800',
+    id: 'Sat Aug 21 2021 13:23:29 GMT+0800',
     owner: '',
     repo: '',
     oauth: {
@@ -834,9 +1015,9 @@ gitment.render('gitment-content');
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://xuekaikai.github.io/2021/08/20/kuai-su-ru-men-git/';
+        this.page.url = 'https://xuekaikai.github.io/2021/08/21/shi-yong-git/';
         this.page.identifier = '';
-        this.page.title = 'Git快速入门';
+        this.page.title = '使用Git';
     };
     let disqus_shortname = '';
 
@@ -864,11 +1045,12 @@ gitment.render('gitment-content');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="../../21/shi-yong-git/">
+                <a href="">
                     <div class="card-image">
                         
                         
@@ -884,9 +1066,59 @@ gitment.render('gitment-content');
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-21
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-21
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="../../../../categories/Git/" class="post-category">
+                                    Git
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="../../../../tags/Git/">
+                        <span class="chip bg-color">Git</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="../../20/kuai-su-ru-men-git/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../medias/featureimages/15.jpg" class="responsive-img" alt="Git快速入门">
+                        
+                        <span class="card-title">Git快速入门</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -906,43 +1138,6 @@ gitment.render('gitment-content');
                         <span class="chip bg-color">Git</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="../../19/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="../../../../medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-19
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            xuekaikai
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>
