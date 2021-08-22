@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>GitHub-issues</title>
+      <link href="/2021/08/21/github-issues/"/>
+      <url>/2021/08/21/github-issues/</url>
+      
+        <content type="html"><![CDATA[<h1 id="GitHub-Issues"><a href="#GitHub-Issues" class="headerlink" title="GitHub Issues"></a>GitHub Issues</h1><h2 id="创建议题"><a href="#创建议题" class="headerlink" title="创建议题"></a>创建议题</h2><p>议题可用于跟踪漏洞、增强功能或其他请求。</p><ol><li><p>在 GitHub 上，导航到仓库的主页面。</p></li><li><p>在仓库名称下，单击 Issues。</p><p><img src="/2021/08/21/github-issues/image-20210810200134037.png"></p></li><li><p>单击 New Issues（新建议题）。</p><p><img src="/2021/08/21/github-issues/image-20210810200210263.png"></p></li><li><p>键入议题的标题和说明。</p><p><img src="/2021/08/21/github-issues/image-20210810200303246.png"></p></li><li><p>完成后，单击 Submit new issue（提交新议题）。</p></li></ol><h2 id="从评论中打开议题"><a href="#从评论中打开议题" class="headerlink" title="从评论中打开议题"></a>从评论中打开议题</h2><p><a href="https://docs.github.com/cn/issues/tracking-your-work-with-issues/creating-issues/opening-an-issue-from-a-comment">https://docs.github.com/cn/issues/tracking-your-work-with-issues/creating-issues/opening-an-issue-from-a-comment</a></p><h2 id="从代码打开议题"><a href="#从代码打开议题" class="headerlink" title="从代码打开议题"></a>从代码打开议题</h2><ol><li><p>打开需要创建议题的代码。</p></li><li><p>通过点击行号来选择高亮，如果是多行，先在首行点击行号，在末行按<code>shift</code>在点击行号，进行选中高亮。</p></li><li><p>这时代码左侧会出现，<code>···</code>。单击，在下拉菜单中，点击 Reference in new issue（新议题中的引用）。</p><p><img src="/2021/08/21/github-issues/image-20210810201631078.png"></p></li><li><p>键入议题的标题和说明，点击提交。</p></li></ol><h2 id="将拉取请求链接到议题"><a href="#将拉取请求链接到议题" class="headerlink" title="将拉取请求链接到议题"></a>将拉取请求链接到议题</h2><p>你可以将拉取请求链接到议题，以显示修复正在进行中，并在拉取请求被合并时自动关闭该议题。</p><p><strong>手动将拉取请求链接到议题</strong></p><p>对仓库有写入权限的任何人都可以手动将拉取请求链接到议题。</p><ol><li><p>在 GitHub 上，导航到仓库的主页面。</p></li><li><p>在仓库名称下，点击 <code>Pull requests</code>（拉取请求）。</p><p><img src="/2021/08/21/github-issues/image-20210810204551164.png"></p></li><li><p>在拉取请求中，单击要连接到议题的拉取请求。</p></li><li><p>在右侧边栏中，单击 Linked issues（链接的议题）。</p><p><img src="/2021/08/21/github-issues/image-20210810204959200.png"></p></li><li><p>单击要链接到拉取请求的议题。</p></li></ol><h2 id="删除议题"><a href="#删除议题" class="headerlink" title="删除议题"></a>删除议题</h2><p>拥有仓库管理员权限的人员可从仓库永久性删除议题。</p><ol><li><p>导航到要删除的议题。</p></li><li><p>在右侧栏最下方，单击 Delete issue（删除议题）。</p><p><img src="/2021/08/21/github-issues/image-20210810205305071.png"></p></li><li><p>点击 Delete this issue。</p><p><img src="/2021/08/21/github-issues/image-20210810205341724.png"></p></li></ol><h2 id="管理议题"><a href="#管理议题" class="headerlink" title="管理议题"></a>管理议题</h2><h3 id="分配议题和拉取请求到其他-GitHub-用户"><a href="#分配议题和拉取请求到其他-GitHub-用户" class="headerlink" title="分配议题和拉取请求到其他 GitHub 用户"></a>分配议题和拉取请求到其他 GitHub 用户</h3><p>受理人明确谁在处理特定议题和拉取请求。</p><p><strong>分配单个议题或拉取请求</strong></p><ol><li><p>在 GitHub 上，导航到仓库的主页面。</p></li><li><p>在仓库名称下，点击 Issuse（议题）或 Pull requests（拉取请求）。</p><p><img src="/2021/08/21/github-issues/image-20210812190749606.png"></p></li><li><p>打开要分配给他人的议题或拉取请求。</p></li><li><p>在右侧菜单，单击 Assignees （受理人）。</p><p><img src="/2021/08/21/github-issues/image-20210812191057800.png"></p></li><li><p>选择受理人到议题或拉取请求。（最多十个）</p><p><img src="/2021/08/21/github-issues/image-20210812191149501.png"></p></li></ol><p><strong>分配多个议题或拉取请求</strong></p><ol><li><p>在 GitHub 上，导航到仓库的主页面。</p></li><li><p>在仓库名称下，点击 Issues（议题）或 Pull requests（拉取请求）。</p><p><img src="/2021/08/21/github-issues/image-20210812191315567.png"></p></li><li><p>选中要分配给别人的项目旁边的复选框。</p><p><img src="/2021/08/21/github-issues/image-20210812191357815.png"></p></li><li><p>在右上角点击 Assign（分配）。</p><p><img src="/2021/08/21/github-issues/image-20210812191457007.png"></p></li><li><p>选择受理人。（最多十个）</p><p><img src="/2021/08/21/github-issues/image-20210812191528109.png"></p></li></ol><h3 id="查看所有议题和拉取请求"><a href="#查看所有议题和拉取请求" class="headerlink" title="查看所有议题和拉取请求"></a>查看所有议题和拉取请求</h3><ol><li><p>在任何页面顶部，点击 Pull requests（拉取请求）或 Issues（议题）。</p><p><img src="/2021/08/21/github-issues/image-20210812191750341.png"></p></li><li><p>选择想要查看的拉取请求或议题。</p><p><img src="/2021/08/21/github-issues/image-20210812191824045.png"></p></li></ol><h3 id="将议题固定到仓库"><a href="#将议题固定到仓库" class="headerlink" title="将议题固定到仓库"></a>将议题固定到仓库</h3><p>在仓库中议题列表的上方最多可以固定三个重要议题。</p><p>要固定某个议题，必须对该议题所在的仓库具有写入权限。</p><ol><li><p>在 GitHub 上，导航到仓库的主页面。</p></li><li><p>在仓库名称下，点击 Issues（议题）。</p></li><li><p>在议题列表中，单击你想要固定的议题。</p></li><li><p>在右侧边栏中，单击 Pin issue（固定议题）。</p><p><img src="/2021/08/21/github-issues/image-20210812192953432.png"></p></li></ol><h3 id="将议题转让给其他仓库"><a href="#将议题转让给其他仓库" class="headerlink" title="将议题转让给其他仓库"></a>将议题转让给其他仓库</h3><ol><li><p>在 GitHub 上，导航到仓库的主页面。</p></li><li><p>在仓库名称下，点击 Issues（议题）。</p></li><li><p>在议题列表中，单击你想要转让的议题。</p></li><li><p>在右侧侧边栏中，单击 Transfer issue（转让议题）。</p><p><img src="/2021/08/21/github-issues/image-20210812193329166.png"></p></li><li><p>使用 Choose a repository（选择仓库）下拉菜单，并选择议题要转让到的仓库。</p><p><img src="/2021/08/21/github-issues/image-20210812193421095.png"></p></li><li><p>最后单击 Transfer issue（转让议题）。</p><p><img src="/2021/08/21/github-issues/image-20210812193500300.png"></p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Git协作</title>
       <link href="/2021/08/21/git-xie-zuo/"/>
       <url>/2021/08/21/git-xie-zuo/</url>

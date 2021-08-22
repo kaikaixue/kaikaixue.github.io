@@ -6,7 +6,7 @@
   <link href="https://xuekaikai.github.io/atom.xml" rel="self"/>
   
   <link href="https://xuekaikai.github.io/"/>
-  <updated>2021-08-21T13:18:20.842Z</updated>
+  <updated>2021-08-22T05:31:07.890Z</updated>
   <id>https://xuekaikai.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GitHub-issues</title>
+    <link href="https://xuekaikai.github.io/2021/08/21/github-issues/"/>
+    <id>https://xuekaikai.github.io/2021/08/21/github-issues/</id>
+    <published>2021-08-21T13:22:34.000Z</published>
+    <updated>2021-08-22T05:31:07.890Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;GitHub-Issues&quot;&gt;&lt;a href=&quot;#GitHub-Issues&quot; class=&quot;headerlink&quot; title=&quot;GitHub Issues&quot;&gt;&lt;/a&gt;GitHub Issues&lt;/h1&gt;&lt;h2 id=&quot;创建议题&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://xuekaikai.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://xuekaikai.github.io/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>Git协作</title>
