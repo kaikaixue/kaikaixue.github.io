@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>GitHub-pages</title>
+      <link href="/2021/08/22/github-pages/"/>
+      <url>/2021/08/22/github-pages/</url>
+      
+        <content type="html"><![CDATA[<h1 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h1><h2 id="创建-GitHub-Pages-站点"><a href="#创建-GitHub-Pages-站点" class="headerlink" title="创建 GitHub Pages 站点"></a>创建 GitHub Pages 站点</h2><h3 id="为站点创建仓库"><a href="#为站点创建仓库" class="headerlink" title="为站点创建仓库"></a>为站点创建仓库</h3><p>如果站点是一个独立的项目，可以创建新仓库来存储站点源代码。如果站点与现有的项目关联，可以添加站点的源代码添加到该项目仓库的默认分支或其他分支上的 <code>/docs</code> 文件夹中。</p><ol><li><p>在任何页面的右上角，使用 + 下拉菜单选择 New repository（新建仓库）。</p><p><img src="/2021/08/22/github-pages/image-20210816224334644.png"></p></li><li><p>输入仓库的名称。如果创建的是用户或组织站点，仓库名称必须为 <code>&lt;user&gt;.github.io</code> 或 <code>&lt;organization&gt;.github.io</code>。</p><p><img src="/2021/08/22/github-pages/image-20210816225007884.png"></p></li><li><p>点击创建。</p></li></ol><h3 id="创建站点"><a href="#创建站点" class="headerlink" title="创建站点"></a>创建站点</h3><ol><li>在 GitHub 上，导航到站点的仓库。</li><li>确定要使用的发布源。</li><li>如果发布源已存在，则导航到发布源。如果不存在，则创建发布源。</li><li>在发布源的根目录中，创建一个名为 <code>index.md</code>、包含要在网站主页上显示的内容的文件。</li><li>配置发布源。</li></ol><h2 id="使用主题选择器将主题添加到-GitHub-Pages-站点"><a href="#使用主题选择器将主题添加到-GitHub-Pages-站点" class="headerlink" title="使用主题选择器将主题添加到 GitHub Pages 站点"></a>使用主题选择器将主题添加到 GitHub Pages 站点</h2><h3 id="使用主题选择器添加主题"><a href="#使用主题选择器添加主题" class="headerlink" title="使用主题选择器添加主题"></a>使用主题选择器添加主题</h3><ol><li><p>在 GitHub 上，导航到站点的仓库。</p></li><li><p>在仓库名称下，单击 Settings（设置）。</p><p><img src="/2021/08/22/github-pages/image-20210816230412229.png"></p></li><li><p>在左侧边栏中，单击 Pages（页面）</p><p><img src="/2021/08/22/github-pages/image-20210816231147862.png"></p></li><li><p>单击 Choose a theme （选择主题）或 Change theme（更改主题）。</p><p><img src="/2021/08/22/github-pages/image-20210816231727094.png"></p></li><li><p>在页面的顶部单击所需的主题，任何单击 Select theme（选择主题）。</p><p><img src="/2021/08/22/github-pages/image-20210816231831287.png"></p></li><li><p>系统会提示你编辑站点的 README.md 文件。（可以提交或取消）</p></li></ol><h2 id="配置-GitHub-Pages-站点的发布源"><a href="#配置-GitHub-Pages-站点的发布源" class="headerlink" title="配置 GitHub Pages 站点的发布源"></a>配置 GitHub Pages 站点的发布源</h2><p>如果你使用 GitHub Pages 站点的默认发布源，你的站点将自动发布。你也可以从不同的分支或文件夹发布站点。</p><h3 id="选择发布源"><a href="#选择发布源" class="headerlink" title="选择发布源"></a>选择发布源</h3><p>在配置发布源之前，请确定要用作发布源的分支已存在你的仓库中。</p><ol><li><p>在 GitHub 上，导航到站点的仓库。</p></li><li><p>在仓库名称下，单击 Settings（设置）。</p><p><img src="/2021/08/22/github-pages/image-20210816230412229.png"></p></li><li><p>在左侧边栏中，单击 Pages（页面）</p><p><img src="/2021/08/22/github-pages/image-20210816231147862.png"></p></li><li><p>在 “GitHub Pages” 下，使用 None（无）或 Branch（分支）下拉菜单选择发布源。</p><p><img src="/2021/08/22/github-pages/image-20210816232432477.png"></p></li><li><p>（可选）使用下拉菜单选择发布源的文件夹。</p><p><img src="/2021/08/22/github-pages/image-20210816232526423.png"></p></li><li><p>单击 Save（保存）</p></li></ol><h2 id="为-GitHub-Pages-站点创建自定义-404-页面"><a href="#为-GitHub-Pages-站点创建自定义-404-页面" class="headerlink" title="为 GitHub Pages 站点创建自定义 404 页面"></a>为 GitHub Pages 站点创建自定义 404 页面</h2><p>你可以自定义在人们尝试访问你站点上不存在的页面时显示的 404 错误页面。</p><ol><li><p>在 GitHub 上，导航到站点的仓库。</p></li><li><p>在文件列表上方，使用 Add file（添加文件）下拉菜单，单击 Create new file（创建新文件）。</p><p><img src="/2021/08/22/github-pages/image-20210816233125434.png"></p></li><li><p>在文件名字段中，键入 <code>404.html</code> 或 <code>404.md</code>。</p></li><li><p>如果将文件命名为 <code>404.md</code>，请将 YAML 前页添加到文件的开头：</p><pre><code>permalink: /404.html</code></pre></li><li><p>键入要在 404 页面上显示的内容。</p></li><li><p>在页面底部，输入一条简短有意义的提交信息，描述对文件所作的更改。</p><p><img src="/2021/08/22/github-pages/image-20210816233807197.png"></p></li><li><p>选择你要提交的分支。</p><p><img src="/2021/08/22/github-pages/image-20210816233854411.png"></p></li></ol><h2 id="使用-HTTPS-保护-GitHub-Pages-站点"><a href="#使用-HTTPS-保护-GitHub-Pages-站点" class="headerlink" title="使用 HTTPS 保护 GitHub Pages 站点"></a>使用 HTTPS 保护 GitHub Pages 站点</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> Git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>GitHub-issues</title>
       <link href="/2021/08/21/github-issues/"/>
       <url>/2021/08/21/github-issues/</url>
