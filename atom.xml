@@ -6,7 +6,7 @@
   <link href="https://xuekaikai.github.io/atom.xml" rel="self"/>
   
   <link href="https://xuekaikai.github.io/"/>
-  <updated>2021-08-22T05:53:06.971Z</updated>
+  <updated>2021-09-07T04:44:06.018Z</updated>
   <id>https://xuekaikai.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://xuekaikai.github.io/2021/09/07/wei-xin-xiao-cheng-xu/01-zi-ding-yi-di-bu-tu-qi-tabbar/"/>
+    <id>https://xuekaikai.github.io/2021/09/07/wei-xin-xiao-cheng-xu/01-zi-ding-yi-di-bu-tu-qi-tabbar/</id>
+    <published>2021-09-07T04:39:53.806Z</published>
+    <updated>2021-09-07T04:44:06.018Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;01-自定义底部凸起-tabBar&quot;&gt;&lt;a href=&quot;#01-自定义底部凸起-tabBar&quot; class=&quot;headerlink&quot; title=&quot;01. 自定义底部凸起 tabBar&quot;&gt;&lt;/a&gt;01. 自定义底部凸起 tabBar&lt;/h1&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Flutter 起步</title>
+    <link href="https://xuekaikai.github.io/2021/09/07/flutter-qi-bu/"/>
+    <id>https://xuekaikai.github.io/2021/09/07/flutter-qi-bu/</id>
+    <published>2021-09-07T04:38:01.000Z</published>
+    <updated>2021-09-07T04:38:17.579Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Flutter-起步&quot;&gt;&lt;a href=&quot;#Flutter-起步&quot; class=&quot;headerlink&quot; title=&quot;Flutter 起步&quot;&gt;&lt;/a&gt;Flutter 起步&lt;/h1&gt;&lt;h2 id=&quot;1-在-Windows-上搭建-Flutter-开发环境&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Flutter" scheme="https://xuekaikai.github.io/categories/Flutter/"/>
+    
+    
+    <category term="Flutter" scheme="https://xuekaikai.github.io/tags/Flutter/"/>
+    
+  </entry>
   
   <entry>
     <title>GitHub-pages</title>

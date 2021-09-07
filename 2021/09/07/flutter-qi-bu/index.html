@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="Git快速入门, Xkk的小窝">
+    <meta name="keywords" content="Flutter 起步, Xkk的小窝">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Git快速入门 | Xkk的小窝</title>
+    <title>Flutter 起步 | Xkk的小窝</title>
     <link rel="icon" type="image/png" href="../../../../favicon.png">
 
     <link rel="stylesheet" type="text/css" href="../../../../libs/awesome/css/all.css">
@@ -312,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Git快速入门</h1>
+                    <h1 class="description center-align post-title">Flutter 起步</h1>
                 </div>
             </div>
         </div>
@@ -433,8 +433,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="../../../../tags/Git/">
-                                <span class="chip bg-color">Git</span>
+                            <a href="../../../../tags/Flutter/">
+                                <span class="chip bg-color">Flutter</span>
                             </a>
                         
                     </div>
@@ -445,8 +445,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="../../../../categories/Git/" class="post-category">
-                                Git
+                            <a href="../../../../categories/Flutter/" class="post-category">
+                                Flutter
                             </a>
                         
                     </div>
@@ -458,7 +458,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-20
+                    2021-09-07
                 </div>
                 
 
@@ -467,7 +467,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    375
+                    1.2k
                 </div>
                 
 
@@ -489,67 +489,189 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Git快速入门"><a href="#Git快速入门" class="headerlink" title="Git快速入门"></a>Git快速入门</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><ol>
-<li><p>点击右上角 + 号，选择下拉菜单选择 <strong>New repository（新建仓库）</strong>。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210806224614081.png"></p>
+                <h1 id="Flutter-起步"><a href="#Flutter-起步" class="headerlink" title="Flutter 起步"></a>Flutter 起步</h1><h2 id="1-在-Windows-上搭建-Flutter-开发环境"><a href="#1-在-Windows-上搭建-Flutter-开发环境" class="headerlink" title="1.在 Windows 上搭建 Flutter 开发环境"></a>1.在 Windows 上搭建 Flutter 开发环境</h2><h5 id="一、使用镜像"><a href="#一、使用镜像" class="headerlink" title="一、使用镜像"></a>一、使用镜像</h5><p>由于在国内访问Flutter有时可能会受到限制，Flutter官方为中国开发者搭建了临时镜像，大家可以将如下环境变量加入到用户环境变量中：</p>
+<pre><code>PUB_HOSTED_URL=https://pub.flutter-io.cn
+FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+</code></pre>
+<h5 id="二、获取-Flutter-SDK"><a href="#二、获取-Flutter-SDK" class="headerlink" title="二、获取 Flutter SDK"></a>二、获取 Flutter SDK</h5><ol>
+<li><p>在官网下载最新可用的安装包。</p>
 </li>
-<li><p>为仓库设置自己心怡的名称。例如 “hello-world”。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210806224754132.png"></p>
+<li><p>将安装包zip解压到你想安装Flutter SDK的路径（如：<code>C:\src\flutter</code>；注意，不要将flutter安装到需要一些高权限的路径如<code>C:\Program Files\</code>）。</p>
 </li>
-<li><p>（可选）添加仓库的说明。例如，“我在 GitHub 上的第一个仓库”。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210806225007260.png"></p>
+<li><p>更新环境变量</p>
+<p>要在终端运行 <code>flutter</code> 命令， 你需要添加以下环境变量到系统PATH：</p>
+<ul>
+<li>在“用户变量”下检查是否有名为“Path”的条目:<ul>
+<li>如果该条目存在, 追加 <code>flutter\bin</code>的全路径，使用 <code>;</code> 作为分隔符.</li>
+<li>如果条目不存在, 创建一个新用户变量 <code>Path</code> ，然后将 <code>flutter\bin</code>的全路径作为它的值.</li>
+</ul>
 </li>
-<li><p>选择仓库可见性。（公共或私有）</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210806225046524.png"></p>
+<li>在“用户变量”下检查是否有名为”PUB_HOSTED_URL”和”FLUTTER_STORAGE_BASE_URL”的条目，如果没有，也添加它们。</li>
+</ul>
 </li>
-<li><p>选择 Initialize this repository with a README（使用自述文件初始化此仓库）。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210806225227004.png"></p>
-</li>
-<li><p>最后点击 Create repository。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210806225316669.png"></p>
-<p>这样一个 Github 仓库就建立好了。</p>
+<li><p>检查开发环境</p>
+<p>打开一个新的命令提示符或PowerShell窗口并运行以下命令以查看是否需要安装任何依赖项来完成安装：</p>
+<pre><code>flutter doctor
+</code></pre>
 </li>
 </ol>
-<h2 id="复刻仓库"><a href="#复刻仓库" class="headerlink" title="复刻仓库"></a>复刻仓库</h2><p>复刻是仓库的副本。通过复刻仓库，可以自由地尝试更改而不会影响原始项目。</p>
+<h2 id="2-编辑器设置"><a href="#2-编辑器设置" class="headerlink" title="2.编辑器设置"></a>2.编辑器设置</h2><ol>
+<li>下载安装 Android Studio。</li>
+<li>下载插件 Flutter 和 Dart。</li>
+<li>设置 Android 模拟器（在右上角点击 AVD Manager）。</li>
+</ol>
+<h2 id="3-创建新应用"><a href="#3-创建新应用" class="headerlink" title="3.创建新应用"></a>3.创建新应用</h2><ol>
+<li>选择 <strong>File&gt;New Flutter Project</strong></li>
+<li>选择 <strong>Flutter application</strong> 作为 project 类型, 然后点击 Next</li>
+<li>输入项目名称 (如 <code>myapp</code>), 然后点击 Next</li>
+<li>点击 <strong>Finish</strong></li>
+<li>等待Android Studio安装SDK并创建项目.</li>
+</ol>
+<p>上述命令创建一个Flutter项目，项目名为myapp，其中包含一个使用<a target="_blank" rel="noopener" href="https://material.io/guidelines/">Material 组件</a>的简单演示应用程序。</p>
+<p>在项目目录中，您应用程序的代码位于 <code>lib/main.dart</code>.</p>
+<h5 id="体验热重载"><a href="#体验热重载" class="headerlink" title="体验热重载"></a>体验热重载</h5><p>Flutter 可以通过 <em>热重载（hot reload）</em> 实现快速的开发周期，热重载就是无需重启应用程序就能实时加载修改后的代码，并且不会丢失状态（译者语:如果是一个web开发者，那么可以认为这和webpack的热重载是一样的）。简单的对代码进行更改，然后告诉IDE或命令行工具你需要重新加载（点击reload按钮），你就会在你的设备或模拟器上看到更改。</p>
 <ol>
-<li><p><strong>创建复刻的本地克隆</strong></p>
-<ol>
-<li><p>找到你想要复刻的仓库，点击 Code。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210808155638074.png"></p>
-</li>
-<li><p>然后任意选择 HTTPS 或者 SSH 方式，点击复制按钮，复制地址。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210808155856882.png"></p>
-</li>
-<li><p>在你想要存放的文件夹下，右击鼠标打开 Git Bash。</p>
-</li>
-<li><p>键入  git clone ,然后粘贴刚刚复制的 URL。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210808160952914.png"></p>
-</li>
-<li><p>按 Enter 键。创建你的本地克隆。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210808160758187.png"></p>
-</li>
+<li>将字符串<br><code>&#39;You have pushed the button this many times:&#39;</code> 更改为<br><code>&#39;You have clicked the button this many times:&#39;</code></li>
+<li>不要按“Stop”按钮; 让您的应用继续运行。</li>
+<li>要查看您的更改, 只需调用 <strong>Save All</strong> (<code>cmd-s</code> / <code>ctrl-s</code>), 或点击 <strong>热重载按钮</strong> (带有闪电⚡️图标的按钮).</li>
 </ol>
-<p>这样一个本地克隆就复刻好了。</p>
-</li>
-<li><p><strong>配置 Git 以将你的复刻与原始仓库同步</strong></p>
-<ol>
-<li><p>同上 1-2 条</p>
-</li>
-<li><p>在刚刚本地克隆的目录右击打开 Git Bash。</p>
-</li>
-<li><p>键入 git remote -v,然后按 Enter 键。你将看到当前为复刻配置的远程仓库。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210808161948820.png"></p>
-</li>
-<li><p>键入 git remote add upstream ，然后粘贴刚刚复制的仓库 URL 并按 Enter 键。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210808162153393.png"></p>
-</li>
-<li><p>验证为复刻指定的上游仓库，再次键入 git remote -v 。</p>
-<p>你将看到复刻的 URL 为 origin，原始仓库的 URL 为 upstream。</p>
-<p><img src="/2021/08/20/kuai-su-ru-men-git/image-20210808162328344.png"></p>
-</li>
-</ol>
-</li>
-</ol>
+<p>你就会立即看到更新后的字符串。</p>
+<h2 id="4-编写第一个-Flutter-App"><a href="#4-编写第一个-Flutter-App" class="headerlink" title="4.编写第一个 Flutter App"></a>4.编写第一个 Flutter App</h2><pre class="line-numbers language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">'package:flutter/material.dart'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">'package:english_words/english_words.dart'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token function">runApp</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">MyApp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">MyApp</span> <span class="token keyword">extends</span> <span class="token class-name">StatelessWidget</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// final wordPair = new WordPair.random();</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">MaterialApp</span><span class="token punctuation">(</span>
+      <span class="token comment" spellcheck="true">// title: 'Welcome to Flutter',</span>
+      title<span class="token punctuation">:</span> <span class="token string">'Startup Name Generator'</span><span class="token punctuation">,</span>
+      theme<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">ThemeData</span><span class="token punctuation">(</span>
+        primaryColor<span class="token punctuation">:</span> Colors<span class="token punctuation">.</span>white
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      home<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">RandomWords</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token comment" spellcheck="true">// home: new Scaffold(</span>
+      <span class="token comment" spellcheck="true">//   appBar: new AppBar(</span>
+      <span class="token comment" spellcheck="true">//     title: new Text('Welcome to Flutter'),</span>
+      <span class="token comment" spellcheck="true">//   ),</span>
+      <span class="token comment" spellcheck="true">//   body: new Center(</span>
+      <span class="token comment" spellcheck="true">//     // child: new Text('Hello World'),</span>
+      <span class="token comment" spellcheck="true">//     // child: new Text(wordPair.asPascalCase),</span>
+      <span class="token comment" spellcheck="true">//     child: new RandomWords(),</span>
+      <span class="token comment" spellcheck="true">//   ),</span>
+      <span class="token comment" spellcheck="true">// )</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">RandomWords</span> <span class="token keyword">extends</span> <span class="token class-name">StatefulWidget</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token metadata symbol">@override</span>
+  <span class="token function">createState</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token keyword">new</span> <span class="token class-name">RandomWordsState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">RandomWordsState</span> <span class="token keyword">extends</span> <span class="token class-name">State</span><span class="token operator">&lt;</span>RandomWords<span class="token operator">></span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">final</span> _saved <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token operator">&lt;</span>WordPair<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">final</span> _suggestions <span class="token operator">=</span> <span class="token operator">&lt;</span>WordPair<span class="token operator">></span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">final</span> _biggerFont <span class="token operator">=</span> <span class="token keyword">const</span> <span class="token function">TextStyle</span><span class="token punctuation">(</span>fontSize<span class="token punctuation">:</span> <span class="token number">18.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  Widget <span class="token function">_buildSuggestions</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ListView<span class="token punctuation">.</span>builder</span><span class="token punctuation">(</span>
+      padding<span class="token punctuation">:</span> <span class="token keyword">const</span> EdgeInsets<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token number">16.0</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">//  对于每个建议的单词对都会调用一次itemBuilder，然后将单词对添加到ListTile行中</span>
+    <span class="token comment" spellcheck="true">//  在偶数行，该函数会为单词对添加一个ListTile row</span>
+    <span class="token comment" spellcheck="true">//  在奇数行，该函数会添加一个分割线widget，来分割相邻的词对</span>
+    <span class="token comment" spellcheck="true">//  注意，在小屏幕上，分割线看起来可能比较吃力。</span>
+      itemBuilder<span class="token punctuation">:</span> <span class="token punctuation">(</span>context<span class="token punctuation">,</span>i<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//    在每一列之前，添加一个1像素搞的分隔线widget</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>i<span class="token punctuation">.</span>isOdd<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Divider</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//  语法 "i ~/2" 表示i除以2，但返回值是整形（向下取整），比如i为：1，2，3，4，5</span>
+    <span class="token comment" spellcheck="true">//  结果为0，1，1，2，2，这可以计算出ListView中减去分割线后的实际单词对数量</span>
+      <span class="token keyword">final</span> index <span class="token operator">=</span> i <span class="token operator">~/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//  如果是建议列表中最后一个单词对</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>index <span class="token operator">>=</span> _suggestions<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//  接着生成10个单词对，然后添加到建议列表</span>
+          _suggestions<span class="token punctuation">.</span><span class="token function">addAll</span><span class="token punctuation">(</span><span class="token function">generateWordPairs</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">take</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token function">_buildRow</span><span class="token punctuation">(</span>_suggestions<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+  Widget <span class="token function">_buildRow</span><span class="token punctuation">(</span>WordPair pair<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">final</span> alreadySaved <span class="token operator">=</span> _saved<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>pair<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ListTile</span><span class="token punctuation">(</span>
+      title<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">Text</span><span class="token punctuation">(</span>
+        pair<span class="token punctuation">.</span>asPascalCase<span class="token punctuation">,</span>
+        style<span class="token punctuation">:</span> _biggerFont<span class="token punctuation">,</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      trailing<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">Icon</span><span class="token punctuation">(</span>
+        alreadySaved <span class="token operator">?</span> Icons<span class="token punctuation">.</span>favorite <span class="token punctuation">:</span> Icons<span class="token punctuation">.</span>favorite_border<span class="token punctuation">,</span>
+        color<span class="token punctuation">:</span> alreadySaved <span class="token operator">?</span> Colors<span class="token punctuation">.</span>red <span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      onTap<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+          <span class="token keyword">if</span><span class="token punctuation">(</span>alreadySaved<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            _saved<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>pair<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            _saved<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>pair<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// final wordPair = new WordPair.random();</span>
+    <span class="token comment" spellcheck="true">// return new Text(wordPair.asPascalCase);</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Scaffold</span><span class="token punctuation">(</span>
+      appBar<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">AppBar</span><span class="token punctuation">(</span>
+        title<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string">'Startup Name Generator'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        actions<span class="token punctuation">:</span> <span class="token operator">&lt;</span>Widget<span class="token operator">></span><span class="token punctuation">[</span>
+          <span class="token keyword">new</span> <span class="token class-name">IconButton</span><span class="token punctuation">(</span>onPressed<span class="token punctuation">:</span> _pushSaved<span class="token punctuation">,</span> icon<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">Icon</span><span class="token punctuation">(</span>Icons<span class="token punctuation">.</span>list<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      body<span class="token punctuation">:</span> <span class="token function">_buildSuggestions</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">void</span> <span class="token function">_pushSaved</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    Navigator<span class="token punctuation">.</span><span class="token function">of</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>
+      <span class="token keyword">new</span> <span class="token class-name">MaterialPageRoute</span><span class="token punctuation">(</span>
+        builder<span class="token punctuation">:</span> <span class="token punctuation">(</span>context<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+          <span class="token keyword">final</span> tiles <span class="token operator">=</span> _saved<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>
+              <span class="token punctuation">(</span>pair<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ListTile</span><span class="token punctuation">(</span>
+                  title<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">Text</span><span class="token punctuation">(</span>
+                    pair<span class="token punctuation">.</span>asPascalCase<span class="token punctuation">,</span>
+                    style<span class="token punctuation">:</span> _biggerFont<span class="token punctuation">,</span>
+                  <span class="token punctuation">)</span><span class="token punctuation">,</span>
+                <span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+          <span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">final</span> divided <span class="token operator">=</span> ListTile
+          <span class="token punctuation">.</span><span class="token function">divideTiles</span><span class="token punctuation">(</span>
+            context<span class="token punctuation">:</span> context<span class="token punctuation">,</span>
+            tiles<span class="token punctuation">:</span> tiles
+          <span class="token punctuation">)</span>
+          <span class="token punctuation">.</span><span class="token function">toList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Scaffold</span><span class="token punctuation">(</span>
+            appBar<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">AppBar</span><span class="token punctuation">(</span>
+              title<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string">'Saved Suggestions'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token punctuation">)</span><span class="token punctuation">,</span>
+            body<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">ListView</span><span class="token punctuation">(</span>children<span class="token punctuation">:</span> divided<span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+      <span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -614,8 +736,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="../../../../tags/Git/">
-                                    <span class="chip bg-color">Git</span>
+                                <a href="../../../../tags/Flutter/">
+                                    <span class="chip bg-color">Flutter</span>
                                 </a>
                             
                         </div>
@@ -789,13 +911,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="../../21/shi-yong-git/">
+                <a href="../wei-xin-xiao-cheng-xu/01-zi-ding-yi-di-bu-tu-qi-tabbar/">
                     <div class="card-image">
                         
                         
-                        <img src="../../../../medias/featureimages/7.jpg" class="responsive-img" alt="使用Git">
+                        <img src="../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">使用Git</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -806,8 +928,45 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-21
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-07
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            xuekaikai
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="../../../08/22/github-pages/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../medias/featureimages/14.jpg" class="responsive-img" alt="GitHub-pages">
+                        
+                        <span class="card-title">GitHub-pages</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -827,43 +986,6 @@
                         <span class="chip bg-color">Git</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="../../19/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="../../../../medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-19
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            xuekaikai
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>
