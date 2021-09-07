@@ -6,7 +6,7 @@
   <link href="https://xuekaikai.github.io/atom.xml" rel="self"/>
   
   <link href="https://xuekaikai.github.io/"/>
-  <updated>2021-09-07T10:28:11.181Z</updated>
+  <updated>2021-09-07T14:16:25.977Z</updated>
   <id>https://xuekaikai.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flutter 轮播图</title>
+    <link href="https://xuekaikai.github.io/2021/09/07/flutter/01-lun-bo-zu-jian/"/>
+    <id>https://xuekaikai.github.io/2021/09/07/flutter/01-lun-bo-zu-jian/</id>
+    <published>2021-09-07T14:16:01.000Z</published>
+    <updated>2021-09-07T14:16:25.977Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;02-Flutter-轮播图&quot;&gt;&lt;a href=&quot;#02-Flutter-轮播图&quot; class=&quot;headerlink&quot; title=&quot;02. Flutter 轮播图&quot;&gt;&lt;/a&gt;02. Flutter 轮播图&lt;/h1&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="Flutter" scheme="https://xuekaikai.github.io/categories/Flutter/"/>
+    
+    
+    <category term="Flutter" scheme="https://xuekaikai.github.io/tags/Flutter/"/>
+    
+  </entry>
   
   <entry>
     <title>01绪论</title>
@@ -68,8 +93,8 @@
   
   <entry>
     <title>Flutter 起步</title>
-    <link href="https://xuekaikai.github.io/2021/09/07/flutter-qi-bu/"/>
-    <id>https://xuekaikai.github.io/2021/09/07/flutter-qi-bu/</id>
+    <link href="https://xuekaikai.github.io/2021/09/07/flutter/flutter-qi-bu/"/>
+    <id>https://xuekaikai.github.io/2021/09/07/flutter/flutter-qi-bu/</id>
     <published>2021-09-07T04:38:01.000Z</published>
     <updated>2021-09-07T04:38:17.579Z</updated>
     
