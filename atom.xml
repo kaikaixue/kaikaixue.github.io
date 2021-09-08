@@ -6,7 +6,7 @@
   <link href="https://xuekaikai.github.io/atom.xml" rel="self"/>
   
   <link href="https://xuekaikai.github.io/"/>
-  <updated>2021-09-07T14:27:27.535Z</updated>
+  <updated>2021-09-08T13:31:03.335Z</updated>
   <id>https://xuekaikai.github.io/</id>
   
   <author>
@@ -17,9 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>TabBar组件</title>
+    <link href="https://xuekaikai.github.io/2021/09/08/flutter/01tabbar-zu-jian/"/>
+    <id>https://xuekaikai.github.io/2021/09/08/flutter/01tabbar-zu-jian/</id>
+    <published>2021-09-08T13:26:01.000Z</published>
+    <updated>2021-09-08T13:31:03.335Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;01-tabBar-组件&quot;&gt;&lt;a href=&quot;#01-tabBar-组件&quot; class=&quot;headerlink&quot; title=&quot;01.tabBar 组件&quot;&gt;&lt;/a&gt;01.tabBar 组件&lt;/h1&gt;&lt;h3 id=&quot;先上效果图&quot;&gt;&lt;a href=&quot;#先上效果图&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Flutter" scheme="https://xuekaikai.github.io/categories/Flutter/"/>
+    
+    
+    <category term="Flutter" scheme="https://xuekaikai.github.io/tags/Flutter/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Flutter 轮播图</title>
-    <link href="https://xuekaikai.github.io/2021/09/07/flutter/01-lun-bo-zu-jian/"/>
-    <id>https://xuekaikai.github.io/2021/09/07/flutter/01-lun-bo-zu-jian/</id>
+    <link href="https://xuekaikai.github.io/2021/09/07/flutter/02-lun-bo-zu-jian/"/>
+    <id>https://xuekaikai.github.io/2021/09/07/flutter/02-lun-bo-zu-jian/</id>
     <published>2021-09-07T14:16:01.000Z</published>
     <updated>2021-09-07T14:27:27.535Z</updated>
     

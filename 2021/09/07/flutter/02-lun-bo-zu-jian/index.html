@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="01绪论, Xkk的小知识库">
+    <meta name="keywords" content="Flutter 轮播图, Xkk的小知识库">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>01绪论 | Xkk的小知识库</title>
+    <title>Flutter 轮播图 | Xkk的小知识库</title>
     <link rel="icon" type="image/png" href="../../../../../favicon.png">
 
     <link rel="stylesheet" type="text/css" href="../../../../../libs/awesome/css/all.css">
@@ -312,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../../medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../../medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">01绪论</h1>
+                    <h1 class="description center-align post-title">Flutter 轮播图</h1>
                 </div>
             </div>
         </div>
@@ -433,8 +433,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="../../../../../tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
-                                <span class="chip bg-color">数据结构</span>
+                            <a href="../../../../../tags/Flutter/">
+                                <span class="chip bg-color">Flutter</span>
                             </a>
                         
                     </div>
@@ -445,8 +445,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="../../../../../categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="post-category">
-                                数据结构
+                            <a href="../../../../../categories/Flutter/" class="post-category">
+                                Flutter
                             </a>
                         
                     </div>
@@ -467,7 +467,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    920
                 </div>
                 
 
@@ -489,106 +489,266 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="01-绪论"><a href="#01-绪论" class="headerlink" title="01.绪论"></a>01.绪论</h1><p><img src="/2021/09/07/shu-ju-jie-gou/01-xu-lun/image-20210906135644715.png"></p>
-<p><strong>数据 &gt; 数据元素 &gt; 数据项</strong></p>
-<blockquote>
-<p><strong>数据</strong> 是描述客观事物的数、字符以及所有能输入到计算机中并被计算机程序处理的符号的集合。</p>
-<p><strong>数据元素</strong> 是数据的基本单位（例如，A班中的每个学生记录都是一个数据元素），也就是说数据元素是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。</p>
-<p><strong>数据项</strong> 是具有独立含义的数据最小单位，也称为域（例如，A班中每个数据元素即学生记录是由学号、姓名和分数等数据项组成）。</p>
-<p><strong>数据对象</strong> 是性质相同的有限个数据元素的集合，它是<strong>数据的一个子集</strong>。</p>
-<p>默认情况下,数据结构中的数据都指的是数据对象。</p>
-<p><strong>数据结构</strong> 是指所有<strong>数据元素</strong>以及<strong>数据元素之间的关系</strong>，可以看作是相互之间存在着的特定关系的数据元素的集合。可把数据结构看成是带结构的数据元素的集合。</p>
-<p>数据结构    =    数据对象    +    结构</p>
-</blockquote>
-<h3 id="数据结构的三个方面"><a href="#数据结构的三个方面" class="headerlink" title="数据结构的三个方面"></a>数据结构的三个方面</h3><p><strong>逻辑结构</strong>：数据元素之间的逻辑关系。</p>
-<p><strong>存储结构</strong>：数据元素及其关系在计算机存储器中的存储方式。</p>
-<p><strong>数据运算</strong>：施加在该数据上的操作。</p>
-<h4 id="1-数据的逻辑结构"><a href="#1-数据的逻辑结构" class="headerlink" title="1. 数据的逻辑结构"></a>1. 数据的逻辑结构</h4><blockquote>
-<p>数据的逻辑结构是面向用户的，它反映数据元素之间的逻辑关系而不是物理关系，是独立于计算机的。</p>
-</blockquote>
-<p>为了更通用地描述数据的逻辑结构，通常采用<strong>二元组</strong>表示数据的逻辑结构，如下：</p>
-<p>B = (D , R)</p>
-<p>其中，B 是一种逻辑数据结构，D 是数据元素的集合，在 D 上数据元素之间可能存在多种关系，R 是所有关系的集合。即：</p>
-<p><img src="/2021/09/07/shu-ju-jie-gou/01-xu-lun/image-20210907141119482.png"></p>
-<ul>
-<li>R 中的某个关系 rj (1≤ j ≤ m ) 是<strong>序偶</strong>的集合。</li>
-<li>对于 rj 中的任一序偶 &lt;x,y&gt; (x，y∈D)，把 x 叫做序偶的第一元素，把 y 叫做序偶的第二元素，又称第一为第二的<strong>前驱元素</strong>，称第二为第一的<strong>后继元素</strong>。</li>
-<li>若某个元素没有前驱元素，则称为<strong>开始元素</strong>；若没有后继元素，则称为<strong>终端元素</strong>。</li>
-<li>对于对称序偶，即需满足条件：若&lt;x，y&gt;∈r（r∈R），则&lt;y，x&gt;∈r（x，y∈D），可用圆括号代替尖括号，即(x，y)∈r。</li>
-</ul>
-<h4 id="2-逻辑结构的类型"><a href="#2-逻辑结构的类型" class="headerlink" title="2. 逻辑结构的类型"></a>2. 逻辑结构的类型</h4><ul>
-<li><strong>集合</strong>：结构中数据元素之间除了“同属于一个集合”的关系外，没有其他关系，与数学中的集合概念相同。</li>
-<li><strong>线性结构</strong>：若结构是非空的，则有且仅有一个开始元素和终端元素，并且所有元素最多只有一个前驱元素和一个后继元素。</li>
-<li><strong>树形结构</strong>：若结构是非空的，则有且仅有一个元素为开始元素（也称为根节点），可以有多个终端元素，每个元素有零个或多个后继元素，出开始元素外每个元素有且仅有一个前驱元素。</li>
-<li><strong>图形结构</strong>：若结构是非空的，则每个元素可以有多个前驱元素和多个后继元素。</li>
-</ul>
-<h4 id="3-数据的存储结构"><a href="#3-数据的存储结构" class="headerlink" title="3. 数据的存储结构"></a>3. 数据的存储结构</h4><blockquote>
-<p>数据在计算机存储器中的存储方式就是存储结构。它是面向程序员的。</p>
-</blockquote>
-<p><img src="/2021/09/07/shu-ju-jie-gou/01-xu-lun/image-20210907143246814.png"></p>
-<p>设计存储结构的这种映射应满足两个要求：</p>
-<ul>
-<li>存储所有元素</li>
-<li>存储数据元素间的关系</li>
-</ul>
-<h5 id="两种基本存储结构"><a href="#两种基本存储结构" class="headerlink" title="两种基本存储结构"></a>两种基本存储结构</h5><blockquote>
-<p><strong>顺序存储结构、特性</strong>：</p>
-<ul>
-<li>所有元素存放在一片地址连续的存储单元中。</li>
-<li>逻辑上相邻的元素在物理位置上也是相邻的，所以不需要额外空间表示元素之间的逻辑关系。</li>
-</ul>
-<p><strong>链式存储结构、特性</strong>：</p>
-<ul>
-<li>数据元素存放在任意的存储单元中，这组存储单元可以是连续的，也可以是不连续的。</li>
-<li>通过指针域来反映数据元素的逻辑关系。</li>
-</ul>
-</blockquote>
-<h4 id="4-数据的运算"><a href="#4-数据的运算" class="headerlink" title="4. 数据的运算"></a>4. 数据的运算</h4><blockquote>
-<ul>
-<li>将数据存放在计算机中的目的是为了实现一种或多种运算。</li>
-<li>运算包括<strong>功能描述</strong>（或运算功能）和<strong>功能实现</strong>（或运算实现）。</li>
-<li>前者是基于逻辑结构的，是用户定义的，是抽象的。</li>
-<li>后者是基于存储结构的，是程序员用计算机语言或伪码表示的，是详细的过程，其核心是设计是西安某一运算功能的处理步骤，即算法设计。</li>
-</ul>
-</blockquote>
-<p><strong>同一运算，在不同的存储结构中的实现过程是不同的。</strong></p>
-<p>例如，查找序号为 i 的学生分数，其本身就是运算的功能描述。但在顺序存储结构和链式存储结构中的实现过程不同的。</p>
-<p>顺序：</p>
-<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">findi</span><span class="token punctuation">(</span>stud1<span class="token punctuation">[</span><span class="token punctuation">]</span> st<span class="token punctuation">,</span><span class="token keyword">int</span> i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token operator">||</span> i <span class="token operator">></span> st<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IllegalArgumentException</span><span class="token punctuation">(</span><span class="token string">"错误"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> st<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>score<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+                <h1 id="02-Flutter-轮播图"><a href="#02-Flutter-轮播图" class="headerlink" title="02. Flutter 轮播图"></a>02. Flutter 轮播图</h1><h3 id="1-pubspec-yaml-文件下引入依赖库"><a href="#1-pubspec-yaml-文件下引入依赖库" class="headerlink" title="1. pubspec.yaml 文件下引入依赖库"></a>1. pubspec.yaml 文件下引入依赖库</h3><pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">flutter_swiper</span><span class="token punctuation">:</span> ^1.1.6 <span class="token comment" spellcheck="true">#轮播图</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>运行命令：</p>
+<pre><code>flutter packages get
+</code></pre>
+<h3 id="2-创建轮播图"><a href="#2-创建轮播图" class="headerlink" title="2. 创建轮播图"></a>2. 创建轮播图</h3><p>在 lib 文件夹下，新建一个文件夹 swiper，新建文件 <code>swiper.dart</code>，添加如下代码：</p>
+<pre class="line-numbers language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">'package:flutter/material.dart'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token string">'package:flutter_swiper/flutter_swiper.dart'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">SwiperPage</span> <span class="token keyword">extends</span> <span class="token class-name">StatefulWidget</span> <span class="token punctuation">{</span>
+  <span class="token metadata symbol">@override</span>
+  _SwiperPageState <span class="token function">createState</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token function">_SwiperPageState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>链式：</p>
-<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">findi</span><span class="token punctuation">(</span>stud2 head<span class="token punctuation">,</span><span class="token keyword">int</span> i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    Stud2 p <span class="token operator">=</span> head<span class="token punctuation">;</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span>j <span class="token operator">&lt;</span> i <span class="token operator">&amp;&amp;</span> p <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        j<span class="token operator">++</span><span class="token punctuation">;</span>
-        p <span class="token operator">=</span> p<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token operator">||</span> p <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IllegalArgumentException</span><span class="token punctuation">(</span><span class="token string">"错误"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> p<span class="token punctuation">.</span>score<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">_SwiperPageState</span> <span class="token keyword">extends</span> <span class="token class-name">State</span><span class="token operator">&lt;</span>SwiperPage<span class="token operator">></span> <span class="token punctuation">{</span>
+
+  List<span class="token operator">&lt;</span>Map<span class="token operator">></span> imgList <span class="token operator">=</span> <span class="token punctuation">[</span>     <span class="token comment" spellcheck="true">//设置: 轮播图的图片素材</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">"url"</span><span class="token punctuation">:</span><span class="token string">"https://www.itying.com/images/flutter/1.png"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">"url"</span><span class="token punctuation">:</span><span class="token string">"https://www.itying.com/images/flutter/2.png"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">"url"</span><span class="token punctuation">:</span><span class="token string">"https://www.itying.com/images/flutter/3.png"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">"url"</span><span class="token punctuation">:</span><span class="token string">"https://www.itying.com/images/flutter/4.png"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">Scaffold</span><span class="token punctuation">(</span>
+      appBar<span class="token punctuation">:</span> <span class="token function">AppBar</span><span class="token punctuation">(</span>
+        title<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">'轮播图组件'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      body<span class="token punctuation">:</span> <span class="token function">Column</span><span class="token punctuation">(</span>
+        children<span class="token punctuation">:</span> <span class="token operator">&lt;</span>Widget<span class="token operator">></span><span class="token punctuation">[</span>
+        <span class="token comment" spellcheck="true">//  必须要套Container，才能使用轮播图，否则会报错</span>
+          <span class="token function">Container</span><span class="token punctuation">(</span>
+          <span class="token comment" spellcheck="true">//  height: 150,</span>
+          <span class="token comment" spellcheck="true">//  用AspectRatio套住轮播图组件是为了让图片不变形，根据手机屏幕宽高比自适应，效果最佳</span>
+          <span class="token comment" spellcheck="true">//   width: double.infinity, 如果变形加</span>
+            child<span class="token punctuation">:</span> <span class="token function">AspectRatio</span><span class="token punctuation">(</span>
+              aspectRatio<span class="token punctuation">:</span> <span class="token number">16</span><span class="token operator">/</span><span class="token number">9</span><span class="token punctuation">,</span>
+              child<span class="token punctuation">:</span>  <span class="token function">Swiper</span><span class="token punctuation">(</span>
+                itemBuilder<span class="token punctuation">:</span> <span class="token punctuation">(</span>BuildContext context<span class="token punctuation">,</span>int index<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Image<span class="token punctuation">.</span>network</span><span class="token punctuation">(</span>
+                    imgList<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'url'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>fit<span class="token punctuation">:</span> BoxFit<span class="token punctuation">.</span>fill
+                  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                itemCount<span class="token punctuation">:</span> imgList<span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+                pagination<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">SwiperPagination</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">//设置：分页器</span>
+                loop<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 无线循环</span>
+                autoplay<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 图片自动轮播</span>
+                <span class="token comment" spellcheck="true">// control: new SwiperControl(), // 设置：左右的箭头</span>
+              <span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">)</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h5 id="Tip"><a href="#Tip" class="headerlink" title="Tip"></a>Tip</h5><blockquote>
-<ul>
-<li>同一逻辑结构可以对应多种存储结构。</li>
-<li>同样的运算，在不同的存储结构中，其实现过程是不同的。</li>
-</ul>
-</blockquote>
-<h4 id="5-数据结构和数据类型"><a href="#5-数据结构和数据类型" class="headerlink" title="5. 数据结构和数据类型"></a>5. 数据结构和数据类型</h4><p>算法五大特性</p>
-<p><strong>有穷性</strong></p>
-<p><strong>确定性</strong></p>
-<p><strong>可行性</strong></p>
-<p><strong>输入性</strong></p>
-<p><strong>输出性</strong></p>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="3-使用轮播图组件"><a href="#3-使用轮播图组件" class="headerlink" title="3. 使用轮播图组件"></a>3. 使用轮播图组件</h3><p>因为 main.dart 是入口文件，所以要想使用轮播图组件，就必须在 main.dart 中进行修改。</p>
+<p><img src="/2021/09/07/flutter/02-lun-bo-zu-jian/image-20210907205636195.png"></p>
+<pre class="line-numbers language-dart"><code class="language-dart"><span class="token keyword">import</span> <span class="token string">'package:first_flutter_project/swiper/swiper.dart'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">'package:flutter/material.dart'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token function">runApp</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">MyApp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">MyApp</span> <span class="token keyword">extends</span> <span class="token class-name">StatelessWidget</span> <span class="token punctuation">{</span>
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">MaterialApp</span><span class="token punctuation">(</span>
+      title<span class="token punctuation">:</span> <span class="token string">'Startup Name Generator'</span><span class="token punctuation">,</span>
+      theme<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">ThemeData</span><span class="token punctuation">(</span>
+        primaryColor<span class="token punctuation">:</span> Colors<span class="token punctuation">.</span>white
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      home<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">SwiperPage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="4-组件属性"><a href="#4-组件属性" class="headerlink" title="4. 组件属性"></a>4. 组件属性</h3><h6 id="基本参数"><a href="#基本参数" class="headerlink" title="基本参数"></a>基本参数</h6><table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>scrollDirection</td>
+<td align="center">Axis.horizontal</td>
+<td>滚动方向，设置为Axis.vertical如果需要垂直滚动</td>
+</tr>
+<tr>
+<td>loop</td>
+<td align="center">true</td>
+<td>无限轮播模式开关</td>
+</tr>
+<tr>
+<td>index</td>
+<td align="center">0</td>
+<td>初始的时候下标位置</td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td align="center">false</td>
+<td>自动播放开关.</td>
+</tr>
+<tr>
+<td>onIndexChanged</td>
+<td align="center">void onIndexChanged(int index)</td>
+<td>当用户手动拖拽或者自动播放引起下标改变的时候调用</td>
+</tr>
+<tr>
+<td>onTap</td>
+<td align="center">void onTap(int index)</td>
+<td>当用户点击某个轮播的时候调用</td>
+</tr>
+<tr>
+<td>duration</td>
+<td align="center">300.0</td>
+<td>动画时间，单位是毫秒</td>
+</tr>
+<tr>
+<td>pagination</td>
+<td align="center">null</td>
+<td>设置 <code>new SwiperPagination()</code> 展示默认分页指示器</td>
+</tr>
+<tr>
+<td>control</td>
+<td align="center">null</td>
+<td>设置 <code>new SwiperControl()</code> 展示默认分页按钮</td>
+</tr>
+</tbody></table>
+<h6 id="分页指示器"><a href="#分页指示器" class="headerlink" title="分页指示器"></a>分页指示器</h6><p>分页指示器继承自 <code>SwiperPlugin</code>,<code>SwiperPlugin</code> 为 <code>Swiper</code> 提供额外的界面.设置为<code>new SwiperPagination()</code> 展示默认分页.</p>
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">alignment</td>
+<td align="center">Alignment.bottomCenter</td>
+<td>如果要将分页指示器放到其他位置，那么可以修改这个参数</td>
+</tr>
+<tr>
+<td align="center">margin</td>
+<td align="center">const EdgeInsets.all(10.0)</td>
+<td>分页指示器与容器边框的距离</td>
+</tr>
+<tr>
+<td align="center">builder</td>
+<td align="center">SwiperPagination.dots</td>
+<td>目前已经定义了两个默认的分页指示器样式： <code>SwiperPagination.dots</code> 、 <code>SwiperPagination.fraction</code>，都可以做进一步的自定义.</td>
+</tr>
+</tbody></table>
+<p>如果需要定制自己的分页指示器，那么可以这样写：</p>
+<pre class="line-numbers language-dart"><code class="language-dart"><span class="token keyword">new</span> <span class="token class-name">Swiper</span><span class="token punctuation">(</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">,</span>
+    pagination<span class="token punctuation">:</span><span class="token keyword">new</span> <span class="token class-name">SwiperCustomPagination</span><span class="token punctuation">(</span>
+        builder<span class="token punctuation">:</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">,</span> SwiperPluginConfig config<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">YourOwnPaginatipon</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h6 id="控制按钮"><a href="#控制按钮" class="headerlink" title="控制按钮"></a>控制按钮</h6><p>控制按钮组件也是继承自 <code>SwiperPlugin</code>,设置 <code>new SwiperControl()</code> 展示默认控制按钮.</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>iconPrevious</td>
+<td>Icons.arrow_back_ios</td>
+<td>上一页的IconData</td>
+</tr>
+<tr>
+<td>iconNext</td>
+<td>Icons.arrow_forward_ios</td>
+<td>下一页的IconData</td>
+</tr>
+<tr>
+<td>color</td>
+<td>Theme.of(context).primaryColor</td>
+<td>控制按钮颜色</td>
+</tr>
+<tr>
+<td>size</td>
+<td>30.0</td>
+<td>控制按钮的大小</td>
+</tr>
+<tr>
+<td>padding</td>
+<td>const EdgeInsets.all(5.0)</td>
+<td>控制按钮与容器的距离</td>
+</tr>
+</tbody></table>
+<h6 id="控制器-SwiperController"><a href="#控制器-SwiperController" class="headerlink" title="控制器(SwiperController)"></a>控制器(SwiperController)</h6><p><code>SwiperController</code> 用于控制 Swiper的<code>index</code>属性, 停止和开始自动播放. 通过 <code>new SwiperController()</code> 创建一个SwiperController实例，并保存，以便将来能使用。</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>void move(int index, {bool animation: true})</td>
+<td>移动到指定下标，设置是否播放动画</td>
+</tr>
+<tr>
+<td>void next({bool animation: true})</td>
+<td>下一页</td>
+</tr>
+<tr>
+<td>void previous({bool animation: true})</td>
+<td>上一页</td>
+</tr>
+<tr>
+<td>void startAutoplay()</td>
+<td>开始自动播放</td>
+</tr>
+<tr>
+<td>void stopAutoplay()</td>
+<td>停止自动播放</td>
+</tr>
+</tbody></table>
+<h6 id="自动播放"><a href="#自动播放" class="headerlink" title="自动播放"></a>自动播放</h6><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>autoplayDely</td>
+<td>3000</td>
+<td>自动播放延迟毫秒数.</td>
+</tr>
+<tr>
+<td>autoplayDisableOnInteraction</td>
+<td>true</td>
+<td>当用户拖拽的时候，是否停止自动播放.</td>
+</tr>
+</tbody></table>
+<p>参考文章：<a target="_blank" rel="noopener" href="https://github.com/best-flutter/flutter_swiper/blob/master/README-ZH.md#%E6%9E%84%E5%BB%BA">https://github.com/best-flutter/flutter_swiper/blob/master/README-ZH.md#%E6%9E%84%E5%BB%BA</a></p>
 
                 
             </div>
@@ -653,8 +813,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="../../../../../tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
-                                    <span class="chip bg-color">数据结构</span>
+                                <a href="../../../../../tags/Flutter/">
+                                    <span class="chip bg-color">Flutter</span>
                                 </a>
                             
                         </div>
@@ -828,13 +988,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="../../flutter/02-lun-bo-zu-jian/">
+                <a href="../../../08/flutter/01tabbar-zu-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="../../../../../medias/featureimages/3.jpg" class="responsive-img" alt="Flutter 轮播图">
+                        <img src="../../../../../medias/featureimages/8.jpg" class="responsive-img" alt="TabBar组件">
                         
-                        <span class="card-title">Flutter 轮播图</span>
+                        <span class="card-title">TabBar组件</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -845,7 +1005,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-07
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-08
                         </span>
                         <span class="publish-author">
                             
@@ -877,13 +1037,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="../../wei-xin-xiao-cheng-xu/01-zi-ding-yi-di-bu-tu-qi-tabbar/">
+                <a href="../../shu-ju-jie-gou/01-xu-lun/">
                     <div class="card-image">
                         
                         
-                        <img src="../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="01自定义底部凸起tabBar">
+                        <img src="../../../../../medias/featureimages/17.jpg" class="responsive-img" alt="01绪论">
                         
-                        <span class="card-title">01自定义底部凸起tabBar</span>
+                        <span class="card-title">01绪论</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -900,8 +1060,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="../../../../../categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" class="post-category">
-                                    微信小程序
+                            <a href="../../../../../categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="post-category">
+                                    数据结构
                                 </a>
                             
                             
@@ -911,8 +1071,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="../../../../../tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
-                        <span class="chip bg-color">微信小程序</span>
+                    <a href="../../../../../tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                        <span class="chip bg-color">数据结构</span>
                     </a>
                     
                 </div>
